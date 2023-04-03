@@ -1,0 +1,60 @@
+.registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+  
+  .reg-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .reg-label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 120%;
+    font-size: 18px;
+  }
+  
+  .reg-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .Reg-button[type="submit"] {
+    padding: 10px 80px;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .Reg-button[type="submit"]:hover {
+    background-color:darkgray (28, 112, 112);
+  }
+  
+  .help-link {
+    margin-top: 0px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: darkcyan;
+  }
+  .text{
+     font-weight: bold;
+  }
