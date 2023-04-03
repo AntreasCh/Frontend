@@ -41,5 +41,12 @@ Github URLs:
 1. React: https://github.com/AntreasCh/Frontend
 2. API: https://github.com/tpanayiotis/backendic3
 
+Email adress:
+=============
+kv6002group@gmail.com
+
+Email password:
+===============
+Kv6002Group!
 
 
