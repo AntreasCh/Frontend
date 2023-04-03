@@ -15,7 +15,7 @@ function Education() {
 
   
   useEffect(() => {
-    axios.get('http://unn-w20024460.newnumyspace.co.uk/tpp/education').then(response => {
+    axios.get('http://unn-w20017219.newnumyspace.co.uk/ic3/education').then(response => {
       if (Array.isArray(response.data.data)) {
         setData(response.data.data.map(item => item.description));
         setLoading(false);

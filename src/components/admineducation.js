@@ -18,7 +18,7 @@ function AdminEducation() {
 
   
   useEffect(() => {
-    fetch('http://unn-w20001556.newnumyspace.co.uk/kv6002/coursework/api/education')
+    fetch('http://unn-w20017219.newnumyspace.co.uk/ic3/education')
       .then(response => {
         if (response.ok) {
           return response.json();
@@ -58,7 +58,7 @@ function AdminEducation() {
     const updatedData = [...data];
     updatedData[index] = editText;
 
-    fetch('http://unn-w20001556.newnumyspace.co.uk/kv6002/coursework/api/editeducation?id=1&description=' + editText, {
+    fetch('http://unn-w20017219.newnumyspace.co.uk/ic3/editeducation?id=1&description=' + editText, {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json'
@@ -69,6 +69,7 @@ function AdminEducation() {
         if (response.ok) {
           setData(updatedData);
           setEditingIndex(null);
+          alert("Edit completed!");
         } else {
           throw new Error('Something went wrong');
         }
