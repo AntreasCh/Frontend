@@ -47,3 +47,14 @@
     text-decoration: underline;
   }
  
+  .add-link {
+    margin-top: 0px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: darkcyan;
+  }
+  .add-restriction{
+     font-weight: bold;
+     color:black;
+  }
+
