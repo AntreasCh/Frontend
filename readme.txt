@@ -4,7 +4,7 @@ Antreas Chrystodoulou
 Panagiotis Tsellos
 Dimitriana Stylianou
 Alexantros Tamboutsiaris
-Panagiots Tamboukaris
+Panagiotis Tamboukaris
 
 Team:
 =====
