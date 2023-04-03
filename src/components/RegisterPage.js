@@ -40,27 +40,27 @@ function RegisterPage() {
        <h2 className="container__heading">Register</h2>
       <form onSubmit={handleSubmit} className="reg-form">
       <label className="reg-label">
-          Name:
+          Name:  
           <input type="text" value={name} onChange={(event) => setName(event.target.value)} 
-          className="reg-input"
+         className="registration-input"
           />
         </label>
         <label className="reg-label">
           Username:
           <input type="text" value={username} onChange={(event) => setUsername(event.target.value)} 
-          className="reg-input"
+          className="registration-input"
           />
         </label>
         <label className="reg-label">
           Password:
           <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} 
-          className="reg-input"
+          className="registration-input"
           />
         </label>
         <label className="reg-label">
           Email:
           <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} 
-          className="reg-input"
+          className="registration-input"
           />
         </label>
         <button type="submit"className="Reg-button">Register</button>
