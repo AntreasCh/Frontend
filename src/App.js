@@ -1,0 +1,110 @@
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import Activities from './components/Activities';
+import Events from './components/events';
+import HomePage from './components/HomePage';
+import AdminEvents from './components/adminevents';
+import { useLocation } from 'react-router-dom';
+import ContactUs from './components/contactus';
+import Projects from './components/Projects';
+import ShowProject from './components/ShowProject';
+import Demonstrators from './components/Demonstrators';
+import AdminProjects from './components/AdminProjects';
+import Education from './components/education';
+import AdminEducation from './components/admineducation';
+import UpdateProject from './components/UpdateProject';
+import AdminDemonstrators from './components/AdminDemonstrators';
+import UpdateDemonstratorsProject from './components/UpdateDemonstratorsProject';
+import AdminActivities from './components/AdminActivities';
+import Innovation from './components/Innovation';
+import AdminInnovation from './components/AdminInnovation';
+import UpdateInnovationProjects from './components/UpdateInnovationProjects';
+
+
+function App() {
+  const [text, setText] = useState([]);
+const [isLoading, setIsLoading] = useState(true);
+const [project_text, setProject_Text] = useState([]);
+const [isLoadingProject, setIsLoadingProject] = useState(true);
+const [demonstrators_text, setDemonstrators] = useState([]);
+const [isLoadingDemonstrators, setIsLoadingDemonstrators] = useState(true);
+const [innovation_text, setInnovation] = useState([]);
+const [isLoadingInnovation, setIsLoadingInnovation] = useState(true);
+
+useEffect(() => {
+  setIsLoading(true);
+  fetch('http://unn-w20017219.newnumyspace.co.uk/ic3/activities')
+    .then((response) => response.json())
+    .then((data) => {
+      setText(data);
+      setIsLoading(false);
+    })
+    .catch((error) => console.error(error));
+}, []);
+useEffect(() => {
+  setIsLoading(true);
+  fetch('http://unn-w20017219.newnumyspace.co.uk/ic3/demonstrators_text')
+    .then((response) => response.json())
+    .then((data) => {
+      setDemonstrators(data);
+      setIsLoadingDemonstrators(false);
+    })
+    .catch((error) => console.error(error));
+}, []);
+
+
+useEffect(() => {
+  setIsLoadingProject(true);
+  fetch('http://unn-w20017219.newnumyspace.co.uk/ic3/projects_text')
+    .then((response) => response.json())
+    .then((data) => {
+      setProject_Text(data);
+      setIsLoadingProject(false);
+    })
+    .catch((error) => console.error(error));
+}, []);
+
+useEffect(() => {
+  setIsLoading(true);
+  fetch('http://unn-w20017219.newnumyspace.co.uk/ic3/innovation_text')
+    .then((response) => response.json())
+    .then((data) => {
+      setInnovation(data);
+      setIsLoadingInnovation(false);
+    })
+    .catch((error) => console.error(error));
+}, []);
+
+
+
+  return (
+    <div className="App">
+    
+      <Routes>
+        <Route path="/" element={<HomePage  />} />
+        <Route path="/adminevents" element={<AdminEvents />}/>
+        <Route path="/admineducation" element={<AdminEducation />}/>
+        <Route path="/activities" element={<Activities text={text} loading={isLoading}/>}/>
+        <Route path="/adminactivities" element={<AdminActivities  text={text} loading={isLoading}/>}/>
+        <Route path="/events" element={<Events />}/>
+        <Route path="/education" element={<Education />}/>
+        <Route path="/contactus" element={<ContactUs />}/>
+        <Route path="/showproject/:ids" element={<ShowProject  />} />
+        <Route path="/updateproject/:ids" element={<UpdateProject  />} />
+        <Route path="/updatedemonstratorsproject/:ids" element={<UpdateDemonstratorsProject  />} />
+        <Route path="/projects" element={<Projects  text={project_text} loading={isLoadingProject}/>}/>
+        <Route path="/adminprojects" element={<AdminProjects  text={project_text} loading={isLoadingProject}/>}/>
+        <Route path="/demonstrators" element={<Demonstrators  text={demonstrators_text} loading={isLoadingDemonstrators}/>}/>
+        <Route path="/admindemonstrators"  element={<AdminDemonstrators  text={demonstrators_text} loading={isLoadingDemonstrators}/>}/>
+        <Route path="/updateinnovationproject/:ids" element={<UpdateInnovationProjects  />} />
+        <Route path="/innovation" element={<Innovation  text={innovation_text} loading={isLoadingInnovation}/>}/>
+        <Route path="/admininnovation" element={<AdminInnovation   text={innovation_text} loading={isLoadingInnovation}/>}/>
+
+        <Route path="*" element={<p>Not Found</p>} />
+      </Routes>
+    </div>
+  );
+}
+
+export default App;
