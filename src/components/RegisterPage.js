@@ -65,8 +65,8 @@ function RegisterPage() {
         </label>
         <button type="submit"className="Reg-button">Register</button>
       </form>
-     <div className="text">If you have an account please:</div>
-       <Link to="/admin">
+     <div className="if-restriction">If you have an account please:</div>
+       <Link to="/admin" className="help-link">
        click here</Link>
     </div>
     </ParentPage>
