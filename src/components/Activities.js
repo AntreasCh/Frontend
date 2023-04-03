@@ -21,9 +21,41 @@ const HomePage = (props) => {
       .catch((error) => console.error(error));
   }, []);
   console.log();
+    const auth = localStorage.getItem('user_type');
+  if(auth==="admin")
+  {
+    
+
+  }
   
 return (
   <ParentPage>
+          {auth === 'admin' && (
+  <div className="Dataa">
+    <h3>Admin Edit Web Pages</h3>
+    <Link to="/admindemonstrators">
+          <button type = "button" >
+            Demonstrators Update
+       </button>
+            </Link>
+            <Link to="/adminprojects">
+          <button type = "button">
+          Projects Update
+       </button>
+            </Link>
+            <Link to="/admininnovation">
+          <button type = "button" >
+          Innovation Update
+          </button>
+            </Link>
+            <Link to="/adminactivities">
+          <button type = "button" >
+          Activities Update
+          </button>
+            </Link>
+            
+  </div>
+)}
 {!props.loading  &&  !isLoading && (
           <div className="Dataa">
               <h2>
@@ -59,7 +91,7 @@ return (
 <div className = "grid-containers">
         <div className="grid-item">
         <Link to="/demonstrators">
-          <button type = "button" id = "b1" className = "small_btn"><img src={text.data[0].text}  className="App-logo" alt="logo"/>
+          <button type = "button" id = "b1" className = "small_btn"><img src={text.data[0]?.text}  className="App-logo" alt="logo"/>
           {props.text.data[4]?.text && (
       <p>{props.text.data[4].text}</p>
     )}</button>
@@ -68,7 +100,7 @@ return (
         
         <div className="grid-item">
         <Link to="/projects">
-          <button type = "button" id = "b2" className = "small_btn"><img src={text.data[1].text}  className="App-logo" alt="logo"/>
+          <button type = "button" id = "b2" className = "small_btn"><img src={text.data[1]?.text}  className="App-logo" alt="logo"/>
           {props.text.data[5]?.text && (
       <p>{props.text.data[5].text}</p>)}
       </button>
@@ -76,7 +108,7 @@ return (
         </div>
         <div className="grid-item">
         <Link to="/innovation">
-          <button type = "button" id = "b3" className = "small_btn"><img src={text.data[2].text}  className="App-logo" alt="logo"/>
+          <button type = "button" id = "b3" className = "small_btn"><img src={text.data[2]?.text}  className="App-logo" alt="logo"/>
           {props.text.data[6]?.text && (
       <p>{props.text.data[6].text}</p>)}
           </button>
@@ -84,7 +116,7 @@ return (
         </div>
         <div className="grid-item">
           <Link to="/education">
-          <button type = "button" id = "b4" className = "small_btn"><img src={text.data[3].text}  className="App-logo" alt="logo"/>
+          <button type = "button" id = "b4" className = "small_btn"><img src={text.data[3]?.text}  className="App-logo" alt="logo"/>
           {props.text.data[7]?.text && (
       <p>{props.text.data[7].text}</p>)}
             </button>
@@ -93,7 +125,7 @@ return (
         <div className="grid-item b5">
         <Link to="/contactus">
         <button type="button" id="b5" className="big_btn">
-        <img src={text.data[4].text}  className="App-logo" alt="logo"/>
+        <img src={text.data[4]?.text}  className="App-logo" alt="logo"/>
   
         {props.text.data[8]?.text && (
       <p>{props.text.data[8].text}</p>)}
@@ -116,6 +148,8 @@ return (
             
           </div>
         )}
+   
+        
 </ParentPage>
 );
 };
