@@ -130,12 +130,12 @@ export default function AdminSlider2() {
             ))}
         </Swiper>
         {showForm && (
-            <form className='slide1' onSubmit={handleAdd}>
-                <input type="text" placeholder="Picture URL" value={picture_url} onChange={(e) => setPicture_url(e.target.value)} />
-                <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
-                <button type="submit">Submit</button>
-                <button type="button" onClick={handleAddCancelClick}>Cancel</button>
-            </form>
+           <form className='slide1' onSubmit={handleAdd}>
+           <input type="text" placeholder="Picture URL" value={picture_url} onChange={(e) => setPicture_url(e.target.value)} />
+           <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
+           <button type="submit">Submit</button>
+           <button type="button" onClick={handleAddCancelClick}>Cancel</button>
+         </form>
         )}
         <button onClick={handleAddClick}>Add</button>
         </>

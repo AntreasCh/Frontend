@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import construction from './construction.jpg';
+import construction from './ic3.png';
 
 export const HeaderWrapper = styled("section")`
   label: HeaderWrapper;
@@ -13,9 +13,8 @@ export const HeaderWrapper = styled("section")`
 
 export const H3 = styled("h3")`
   label: H3;
-  color: black;
+  color: white;
   font-size: 3rem;
 
 `;
-
 

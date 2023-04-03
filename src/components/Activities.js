@@ -58,7 +58,7 @@ return (
 )}
 {!props.loading  &&  !isLoading && (
           <div className="Dataa">
-              <h2>
+              <h2 style={{ textDecoration: "none" }} >
               {props.text.data[0]?.text && (
                 <strong>
                  {props.text.data[0].text}
@@ -91,6 +91,7 @@ return (
 <div className = "grid-containers">
         <div className="grid-item">
         <Link to="/demonstrators">
+          
           <button type = "button" id = "b1" className = "small_btn"><img src={text.data[0]?.text}  className="App-logo" alt="logo"/>
           {props.text.data[4]?.text && (
       <p>{props.text.data[4].text}</p>

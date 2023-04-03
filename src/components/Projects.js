@@ -90,7 +90,7 @@ const Projects = (props) => {
      
       {!props.loading && props.text && (
   <div className='Project_Text'>
-    <h2>Research Themes and Projects</h2>
+    <h2 style={{ textDecoration: "none" }}>Research Themes and Projects</h2>
     {props.text.data[0]?.text && (
       <strong><h3>{props.text.data[0].text}</h3></strong>
     )}

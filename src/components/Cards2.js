@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from './ResourcesHero';
 import moment from 'moment';
-import '../styles/Cards.css';
 import ParentPage from './ParentPage';
+import '../styles/Cards.css';
 
 /**
  * Cards component that displays a list of cards with news articles. It 
@@ -218,21 +218,21 @@ function Cards({ path_title, title }) {
 
     return (
         <ParentPage>
-            <div>
-                <Hero />
-                <div className="cardsSection">
-                    <h1>{title}</h1>
-                    {searchSection}
-                    {sortSection}
-                    {loading && <p>Loading...</p>}
-                    <div className="newsCard">{listOfCards}</div>
-                    <div className="buttons">
-                        {!loading && <button onClick={showPrevious} disabled={page === 1}>PREVIOUS</button>}
-                        {!loading && <button onClick={showNext} disabled={endIndex >= filteredCards.length}>NEXT</button>}
-                    </div>
+        <div>
+            <Hero />
+            <div className="cardsSection">
+                <h1>{title}</h1>
+                {searchSection}
+                {sortSection}
+                {loading && <p>Loading...</p>}
+                <div className="newsCard">{listOfCards}</div>
+                <div className="buttons">
+                    {!loading && <button onClick={showPrevious} disabled={page === 1}>PREVIOUS</button>}
+                    {!loading && <button onClick={showNext} disabled={endIndex >= filteredCards.length}>NEXT</button>}
                 </div>
             </div>
-        </ParentPage >
+        </div>
+        </ParentPage>
     );
 }
 

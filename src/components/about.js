@@ -20,10 +20,13 @@ function About(props) {
       <HeaderWrapper>
         <H3>
           <strong>IC3: THE INTERNATIONAL CENTRE FOR CONNECTED CONSTRUCTION</strong>
+          
         </H3>
+        
         <div className="atb">
-         <div> <button onClick={handleLearnMoreClick}>Learn More</button></div>
-         <button onClick={() => {window.location.href = '/contactus';}}>Contact Us</button>
+        <button onClick={() => {window.location.href = '/tppfront/contactus';}}>Contact Us</button>
+       
+       
         </div>
       </HeaderWrapper>
       <div ref={aboutRef}>

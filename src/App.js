@@ -106,7 +106,7 @@ useEffect(() => {
 }, []);
 
 useEffect( () => {
-    
+  setIsLoading(true);
   fetch("http://unn-w20017219.newnumyspace.co.uk/ic3/submissions")
   .then(
       (response) => response.json()
@@ -206,7 +206,7 @@ const [users,setUsers] = useState([]);
 
 
 
-        <Route path="/resources" element={<Resources />} />
+<Route path="/resources" element={<Resources />} />
         <Route path="/resources/update-resources-text/:cat_text_id" element={<UpdateResourcesText />} />
         <Route path="/resources/news-and-insights" element={<Cards path_title="news-and-insights" title="News and Insights" />} />
         <Route path="/resources/news-and-insights/:news_id/:news_title" element={<NewsDetails />} />
@@ -220,11 +220,8 @@ const [users,setUsers] = useState([]);
         <Route path="/resources/industry-reports/:id/:title/update-card" element={<UpdateCard path_title="industry-reports" />} />
         <Route path="/community-and-network" element={<CommunityNetwork />} />
         <Route path="/community-and-network/update-community-and-network/:main_id" element={<UpdateCommunityNetwork />} />
+        <Route path="/resources/relevant-news-stories" element={<Cards2 path_title="relevant-news-stories" title="Relevant News Stories" />} />
         <Route path="/submissions" element={<Submissions submissions={submissions} loading={isLoading}/>}/>
- 
-        <Route path="/resources/news-and-insights/add-new-card/*" element={<NotFound />} />
-        <Route path="/resources/relevant-news-stories/add-new-card/*" element={<NotFound />} />
-        <Route path="/resources/industry-reports/add-new-card/*" element={<NotFound />} />
 
       <Route path="*" element={<p>Not Found</p>} />
     </Routes>

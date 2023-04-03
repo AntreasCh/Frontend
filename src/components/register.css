@@ -1,61 +1,61 @@
 .registration {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-  }
-  
-  h2 {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-decoration: underline;
-  }
-  
-  .reg-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .reg-label {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 90%;
-    font-size: 18px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
 
-  .registration-input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid gray;
-    border-radius: 4px;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .Reg-button[type="submit"] {
-    padding: 10px 60px;
-    background-color: darkcyan;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-  }
-  
-  .Reg-button[type="submit"]:hover {
-    background-color:darkgray (28, 112, 112);
-  }
-  
-  .add-link {
-    margin-top: 0px;
-    font-weight: bold;
-    text-decoration: underline;
-    color: darkcyan;
-  }
-  .if-restriction{
-     font-weight: bold;
-     color:black;
-  }
+h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.reg-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  font-size: 18px;
+}
+
+.registration-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  align-items: center;
+  width: 100%;
+}
+
+.Reg-button[type="submit"] {
+  padding: 10px 60px;
+  background-color: darkcyan;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.Reg-button[type="submit"]:hover {
+  background-color:darkgray (28, 112, 112);
+}
+
+.add-link {
+  margin-top: 0px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: darkcyan;
+}
+.if-restriction{
+   font-weight: bold;
+   color:black;
+}

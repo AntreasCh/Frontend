@@ -29,7 +29,8 @@ const Innovation = (props) => {
       {!props.loading && (
         <div className="Demonstrators">
           <div className="title-section">
-            <h2>
+          <h2 style={{ textDecoration: "none" }}>
+
               {props.text.data[0]?.text && (
                 <strong>
                  {props.text.data[0].text}

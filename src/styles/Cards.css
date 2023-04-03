@@ -145,10 +145,12 @@ label {
 
 .sort1 {
     width: 100px;
+    height:100%;
 }
 
 .sort2 {
-    width: 105px;
+    width: 135px;
+    height:100%;
 
 }
 

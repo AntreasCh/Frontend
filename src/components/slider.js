@@ -58,7 +58,9 @@ export default function Slider1() {
                 {users.map((user) => (
                     <SwiperSlide key={user.id}>
                         <div>
-                            <img src={user.picture_url} alt={user.name} />
+                        <img src={user.picture_url} alt={user.name} style={{ maxWidth: '200px', maxHeight: '300px' }} />
+
+
                             <p>{user.name}</p>
 
                             <br/>
