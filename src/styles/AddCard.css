@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.addHero img {
+    padding-top: 70px;
+    width: 100%;
+    height: 500px;
+}
+
+.addTitle h1 {
+    position: relative;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 25%;
+    bottom: 100px;
+    background-color: #fff;
+}
+
+.addTitle h1 .addPathTitle {
+    color: #07a8ad;
+}
+
+.insertForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+}
+
+.required {
+    color: red;
+    margin-left: 5px;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+.insertForm label {
+    flex-direction: column;
+    text-align: left;
+    width: 60%;
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+}
+
+.insertForm input,
+.insertForm textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+.addBtns {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.addBtns button {
+    margin: 20px 5px;
+    width: 135px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid rgb(203, 202, 202);
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: rgba(39, 75, 73, 255);
+    color: #fff;
+}
+
+.addBtns button:hover {
+    background-color: #07a8ad;
+    color: #fff;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.addNotification {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.addNotification button {
+    margin: 2% 5px;
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #222;
+}
+
+.addNotification button:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+
+    .addHero img {
+        height: 400px;
+    }
+
+    .addTitle h1 {
+        font-size: 24px;
+        bottom: 100px;
+        margin: 0 5%;
+    }
+
+    .required {
+        font-size: 11px;
+    }
+
+    .insertForm {
+        bottom: 60px;
+    }
+
+    .insertForm label {
+        width: 70%;
+        font-size: 13px;
+    }
+
+    .insertForm input,
+    .insertForm textarea {
+        font-size: 13px;
+    }
+
+    .addBtns button {
+        width: 120px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .addNotification {
+        padding: 20px;
+        font-size: 13px;
+    }
+
+    .addNotification button {
+        width: 60px;
+        height: 35px;
+        font-size: 13px;
+    }
+}

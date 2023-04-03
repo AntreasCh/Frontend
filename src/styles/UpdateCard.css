@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.updateHero img {
+    padding-top: 70px;
+    width: 100%;
+    height: 500px;
+}
+
+.updateTitle h1 {
+    position: relative;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 25%;
+    bottom: 100px;
+    background-color: #fff;
+}
+
+.updateTitle h1 .updatePathTitle {
+    color: #07a8ad;
+}
+
+.updateForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+}
+
+.required {
+    color: red;
+    margin-left: 5px;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+.updateForm label {
+    flex-direction: column;
+    text-align: left;
+    width: 70%;
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+}
+
+.updateForm input,
+.updateForm textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+.updateBtns {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.updateBtns button {
+    margin: 20px 5px;
+    width: 165px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid rgb(203, 202, 202);
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: rgba(39, 75, 73, 255);
+    color: #fff;
+}
+
+.updateBtns button:hover {
+    background-color: #07a8ad;
+    color: #fff;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.updateNotification {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.updateNotification button {
+    margin: 2% 5px;
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #222;
+}
+
+.updateNotification button:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+
+    .updateHero img {
+        height: 400px;
+    }
+
+    .updateTitle h1 {
+        font-size: 24px;
+        bottom: 100px;
+        margin: 0 5%;
+    }
+
+    .required {
+        font-size: 11px;
+    }
+
+    .updateForm {
+        bottom: 60px;
+    }
+
+    .updateForm label {
+        width: 70%;
+        font-size: 13px;
+    }
+
+    .updateForm input,
+    .updateForm textarea {
+        font-size: 13px;
+    }
+
+    .updateBtns button {
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .updateNotification {
+        padding: 20px;
+        font-size: 13px;
+    }
+
+    .updateNotification button {
+        width: 60px;
+        height: 35px;
+        font-size: 13px;
+    }
+}

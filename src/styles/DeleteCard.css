@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.deleteButton {
+    background-color: rgb(195, 40, 40);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: rgb(255, 5, 5);
+    color: #fff;
+}
+
+.disabledButton {
+    background-color: #222;
+    color: #fff;
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+.disabledButton:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.deleteButton,
+.disabledButton {
+    border-radius: 4px;
+    font-size: 13px;
+    width: 330px;
+    height: 35px;
+}
+
+.deleteNotification {
+    position: relative;
+    bottom: 50px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 26px;
+    text-align: center;
+}
+
+.deleteNotification button {
+    margin: 2% 5px;
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #222;
+}
+
+.deleteNotification button:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+
+    .deleteButton,
+    .disabledButton {
+        font-size: 13px;
+    }
+
+    .deleteNotification {
+        bottom: 55px;
+    }
+
+    .deleteNotification button {
+        width: 60px;
+        height: 35px;
+        font-size: 13px;
+    }
+}

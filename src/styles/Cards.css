@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.linkCard {
+    text-decoration: none;
+    color: #222;
+}
+
+.cardsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
+}
+
+.cardsSection h1 {
+    font-size: 48px;
+}
+
+.newsCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 95px;
+}
+
+.card1 {
+    text-align: start;
+    box-shadow: 0 5px 25px 2px rgb(0, 0, 0, 0.11);
+    border-radius: 7px;
+    cursor: pointer;
+    width: 330px;
+    height: 620px;
+    position: relative;
+}
+
+.card2 {
+    text-align: start;
+    box-shadow: 0 5px 25px 2px rgb(0, 0, 0, 0.11);
+    border-radius: 7px;
+    cursor: pointer;
+    width: 330px;
+    height: 520px;
+    position: relative;
+}
+
+.imageCard {
+    width: 330px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.imageCard img {
+    transition: 0.3s ease-in-out;
+}
+
+.imageCard:hover img {
+    transform: scale(1.03);
+}
+
+.tagsPosition1 {
+    position: relative;
+    bottom: 15px;
+}
+
+.tagsPosition2 {
+    position: relative;
+}
+
+.card1 h4 {
+    font-size: 21px;
+    margin: 0 2%;
+}
+
+.card2 h4 {
+    font-size: 21px;
+    margin: 0 2%;
+}
+
+.card1 p {
+    font-size: 16px;
+    margin: 0 2%;
+}
+
+.date {
+    background-color: #07a8ad;
+    color: #fff;
+    text-align: left;
+    padding: 2% 3%;
+    position: relative;
+    bottom: 29.5px;
+    right: 6.5px;
+    cursor: pointer;
+}
+
+label {
+    font-size: 17px;
+}
+
+.delete {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.update {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.search1,
+.search2,
+.sort1,
+.sort2 {
+    background-color: white;
+    border: 1px solid rgb(203, 202, 202);
+    border-radius: 4px;
+    font-size: 13px;
+    color: rgb(36, 36, 36);
+    height: 30px;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.search1 {
+    width: 320px;
+    text-indent: 5px;
+}
+
+.search2 {
+    width: 200px;
+    text-indent: 5px;
+}
+
+.sort1 {
+    width: 75px;
+}
+
+.sort2 {
+    width: 105px;
+}
+
+.position1 {
+    padding-bottom: 1%;
+}
+
+.addButton {
+    width: 130px;
+    height: 35px;
+    font-size: 13px;
+    background-color: #07a8ad;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.addButton:hover {
+    background-color: #005154;
+    color: #fff;
+}
+
+.updateButton {
+    background-color: rgba(39, 75, 73, 255);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 13px;
+    width: 330px;
+    height: 35px;
+}
+
+.updateButton:hover {
+    background-color: rgb(6, 126, 126);
+    color: #fff;
+}
+
+.position2 {
+    padding-bottom: 12%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.buttons button {
+    margin: 0 5px;
+    width: 140px;
+    height: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid rgb(203, 202, 202);
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #222;
+}
+
+.buttons button:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.buttons button:disabled {
+    border: 1px solid #eee;
+    color: rgb(180, 175, 175);
+    background-color: #e6dfdf;
+    cursor: default;
+}
+
+@media screen and (max-width: 850px) {
+
+    .cardsSection h1 {
+        font-size: 36px;
+    }
+
+    .newsCard {
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .card1 h4 {
+        font-size: 20px;
+        margin: 0 4%;
+    }
+
+    .card2 h4 {
+        font-size: 20px;
+        margin: 0 4%;
+    }
+
+    .card1 p {
+        font-size: 15px;
+        margin: 0 4%;
+    }
+
+    .date {
+        bottom: 28.5px;
+        right: 13.5px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    .search1 {
+        width: 300px;
+    }
+
+    .buttons button {
+        width: 120px;
+        height: 40px;
+        font-size: 13px;
+    }
+}

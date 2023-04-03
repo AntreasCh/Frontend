@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.updateResourcesHero img {
+    padding-top: 70px;
+    width: 100%;
+    height: 550px;
+}
+
+.updateResourcesTitle h1 {
+    position: relative;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 30%;
+    bottom: 100px;
+    background-color: #fff;
+}
+
+.updateResourcesTitle h1 .updateResourcesPathTitle {
+    color: #07a8ad;
+}
+
+.updateResourcesForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+}
+
+.requiredResources {
+    color: red;
+    margin-left: 5px;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+.updateResourcesForm label {
+    flex-direction: column;
+    text-align: left;
+    width: 70%;
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+}
+
+.updateResourcesForm input,
+.updateResourcesForm textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+.updateResourcesBtns {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.updateResourcesBtns button {
+    margin: 20px 5px;
+    width: 165px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid rgb(203, 202, 202);
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: rgba(39, 75, 73, 255);
+    color: #fff;
+}
+
+.updateResourcesBtns button:hover {
+    background-color: #07a8ad;
+    color: #fff;
+}
+
+.resourcesLink {
+    text-decoration: none;
+}
+
+.updateResourcesNotification {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.updateResourcesNotification button {
+    margin: 2% 5px;
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #222;
+}
+
+.updateResourcesNotification button:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+
+    .updateResourcesHero img {
+        height: 400px;
+    }
+
+    .updateResourcesTitle h1 {
+        font-size: 24px;
+        bottom: 100px;
+        margin: 0 5%;
+    }
+
+    .requiredResources {
+        font-size: 11px;
+    }
+
+    .updateResourcesForm {
+        bottom: 60px;
+    }
+
+    .updateResourcesForm label {
+        width: 70%;
+        font-size: 13px;
+    }
+
+    .updateResourcesForm input,
+    .updateResourcesForm textarea {
+        font-size: 13px;
+    }
+
+    .updateResourcesBtns button {
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .updateResourcesNotification {
+        padding: 20px;
+        font-size: 13px;
+    }
+
+    .updateResourcesNotification button {
+        width: 60px;
+        height: 35px;
+        font-size: 13px;
+    }
+}

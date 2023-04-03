@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heroSection1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.heroText1 {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: left;
+}
+
+.heroText1 h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #222;
+}
+
+.heroText1 p {
+    font-size: 21px;
+    color: #222;
+    padding: 8px 0 32px 0;
+}
+
+.heroText1 .heroButton1 {
+    text-decoration: none;
+    background: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #222;
+
+}
+
+.heroText1 .heroButton1:hover {
+    background: #07a8ad;
+    color: #fff;
+}
+
+.heroText1 h1,
+.heroText1 p,
+.heroText1 .heroButton1 {
+    margin: 0 33%;
+}
+
+@media screen and (max-width: 850px) {
+
+    .heroText1 {
+        top: 70%;
+        left: 35%;
+    }
+
+    .heroText1 p {
+        font-size: 18px;
+        padding: 0 0 32px 0;
+    }
+
+    .heroText1 .heroButton1 {
+        padding: .6rem 1.1rem;
+        font-size: 1rem;
+    }
+
+    .heroText1 h1,
+    .heroText1 p,
+    .heroText1 .heroButton1 {
+        margin: 0 21%;
+    }
+
+    .heroHomeText1 {
+        top: 80%;
+    }
+
+    .heroHomeText1 h1 {
+        font-size: 2.5rem;
+        padding: 0 0 3rem 0;
+        margin: 0 2%;
+    }
+}
