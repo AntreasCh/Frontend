@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import React, { Fragment } from 'react';
 import { useParams } from 'react-router-dom';
-import Navbar from './Navbar';
+import ParentPage from './ParentPage';
 import moment from 'moment';
 import NotFound from './NotFound';
 import '../styles/NewsDetails.css';
@@ -65,8 +65,9 @@ function NewsDetails() {
     // display the components and the card details if the details have been fetched successfully and the loading state is false
     else if (!loading && details) {
         return (
+            <ParentPage>
             <div>
-                <Navbar />
+        
                 <div className="heroNewsImg">
                     {<img src={details.article_Img_url} alt={details.article_Img_url} />}
                 </div>
@@ -97,7 +98,10 @@ function NewsDetails() {
                     }
                 </div>
             </div>
+            </ParentPage>
+            
         );
+        
     }
 }
 

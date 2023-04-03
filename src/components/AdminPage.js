@@ -68,7 +68,7 @@ function AdminPage(props) {
           //  localStorage.setItem('password', password);
           //  localStorage.setItem('status',json.data.status);
           //  localStorage.setItem('user_type',json.data.user_type);
-            navigate('/register');
+            navigate('/about');
           }
         } else{
           alert("User not authorised");

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from './Navbar';
+import ParentPage from './ParentPage';
 import Hero from './ResourcesHero';
 import moment from 'moment';
 import DeleteCard from './DeleteCard';
@@ -254,8 +254,9 @@ function Cards({ path_title, title }) {
     ));
 
     return (
+        <ParentPage>
         <div>
-            <Navbar />
+           
             <Hero />
             <div className="cardsSection">
                 <h1>{title}</h1>
@@ -276,6 +277,7 @@ function Cards({ path_title, title }) {
                 </div>
             </div>
         </div>
+        </ParentPage>
     );
 }
 

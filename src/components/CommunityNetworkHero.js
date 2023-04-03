@@ -16,7 +16,7 @@ function ResourcesHero() {
             <div className="heroText2">
                 <h1>Community and Network</h1>
                 <p>Regional and Business Growth through IC3.</p>
-                <a href="/contact" className="heroButton2">Contact Us</a>
+                <a href="/tppfront/contactus" className="heroButton2">Contact Us</a>
             </div>
         </div>
     )

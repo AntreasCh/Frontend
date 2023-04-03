@@ -189,7 +189,7 @@ function ContactUs() {
                     ))}
                     </div>
                   <br />
-                  <button type="submit">SUBMIT</button>                  <button  onClick={() => {window.location.href = '/submissions';}}> <strong>Email Submissions</strong></button>
+                  <button type="submit">SUBMIT</button>                  <button  onClick={() => {window.location.href = '/tppfront/submissions';}}> <strong>Email Submissions</strong></button>
  
                   <div className="row">{result ? <Result /> : null} </div>
                 </div>

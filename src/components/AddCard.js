@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from './Navbar';
+import ParentPage from './ParentPage';
 import '../styles/AddCard.css';
 
 /**
@@ -163,10 +163,11 @@ function AddCard({ path_title }) {
     }
 
     return (
+        <ParentPage>
         <div>
             {path_title === "news-and-insights" &&
                 <div>
-                    <Navbar />
+                  
                     <div className="addHero">
                         <img alt="AddCardHeroImg" src="http://unn-w20001556.newnumyspace.co.uk/IC3_Images/Hero_Images/addCardHero.jpg" />
                     </div>
@@ -224,7 +225,7 @@ function AddCard({ path_title }) {
             }
             {path_title === "relevant-news-stories" &&
                 <div>
-                    <Navbar />
+                    
                     <div className="addHero">
                         <img alt="AddCardHeroImg" src="http://unn-w20001556.newnumyspace.co.uk/IC3_Images/Hero_Images/addCardHero.jpg" />
                     </div>
@@ -272,7 +273,7 @@ function AddCard({ path_title }) {
             }
             {path_title === "industry-reports" &&
                 <div>
-                    <Navbar />
+                
                     <div className="addHero">
                         <img alt="AddCardHeroImg" src="http://unn-w20001556.newnumyspace.co.uk/IC3_Images/Hero_Images/addCardHero.jpg" />
                     </div>
@@ -314,6 +315,7 @@ function AddCard({ path_title }) {
                 </div>
             }
         </div>
+        </ParentPage>
     );
 }
 

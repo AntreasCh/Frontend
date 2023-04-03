@@ -14,7 +14,7 @@ const Navbar = () => {
        
         <a href="/tppfront/activities">Activities</a>
         <a href="/tppfront/resources">Resources</a>
-        <a href="/tppfront/community">Community</a>
+        <a href="/tppfront/community-and-network">Community</a>
         <a href="/tppfront/events">Events</a>
         
         <a href="/tppfront/about">About</a>

@@ -32,6 +32,17 @@ import AddUser from './components/AddUser';
 import RegisterPage from './components/RegisterPage';
 import DeleteUser from'./components/DeleteUser';
 
+import Resources from "./components/Resources";
+import UpdateResourcesText from './components/UpdateResourcesText';
+import Cards from './components/Cards';
+import Cards2 from './components/Cards2';
+import NewsDetails from './components/NewsDetails';
+import NotFound from './components/NotFound';
+import AddCard from './components/AddCard';
+import UpdateCard from './components/UpdateCard';
+import CommunityNetwork from "./components/CommunityNetwork";
+import UpdateCommunityNetwork from './components/UpdateCommunityNetwork';
+
 function App() {
   const [text, setText] = useState([]);
 const [isLoading, setIsLoading] = useState(true);
@@ -189,7 +200,27 @@ const [users,setUsers] = useState([]);
         <Route path="/register" element ={<RegisterPage />} />
         <Route path="/addUser" element ={<AddUser users={users}  />} />
         <Route path="/update" element={ <UpdateUser users={users}  authenticated={authenticated} 
-        handleAuthenticated={handleAuthenticated}  handleUpdate={handleUpdate}/>} />
+        handleAuthenticated={handleAuthenticated}  handleUpdate={handleUpdate}/>} 
+        />
+
+
+
+
+<Route path="/resources" element={<Resources />} />
+        <Route path="/resources/update-resources-text/:cat_text_id" element={<UpdateResourcesText />} />
+        <Route path="/resources/news-and-insights" element={<Cards path_title="news-and-insights" title="News and Insights" />} />
+        <Route path="/resources/news-and-insights/:news_id/:news_title" element={<NewsDetails />} />
+        <Route path="/resources/news-and-insights/add-new-card" element={<AddCard path_title="news-and-insights" />} />
+        <Route path="/resources/news-and-insights/:id/:title/update-card" element={<UpdateCard path_title="news-and-insights" />} />
+      
+        <Route path="/resources/relevant-news-stories/add-new-card" element={<AddCard path_title="relevant-news-stories" />} />
+        <Route path="/resources/relevant-news-stories/:id/:title/update-card" element={<UpdateCard path_title="relevant-news-stories" />} />
+        <Route path="/resources/industry-reports" element={<Cards path_title="industry-reports" title="Industry Reports" />} />
+        <Route path="/resources/industry-reports/add-new-card" element={<AddCard path_title="industry-reports" />} />
+        <Route path="/resources/industry-reports/:id/:title/update-card" element={<UpdateCard path_title="industry-reports" />} />
+        <Route path="/community-and-network" element={<CommunityNetwork />} />
+        <Route path="/community-and-network/update-community-and-network/:main_id" element={<UpdateCommunityNetwork />} />
+        <Route path="/submissions" element={<Submissions submissions={submissions} loading={isLoading}/>}/>
 
       <Route path="*" element={<p>Not Found</p>} />
     </Routes>
@@ -222,7 +253,7 @@ const [users,setUsers] = useState([]);
         <Route path="/contactus" element={<ContactUs />}/>
         <Route path="/people" element={<People />}/>
 
-        <Route path="/submissions" element={<Submissions submissions={submissions} loading={isLoading}/>}/>
+        
         <Route path="/about" element={<About about={about} loading={isLoading} />}/>
         
         <Route path="/admin" element={ <AdminPage users={users} authenticated={authenticated} 
@@ -231,6 +262,22 @@ const [users,setUsers] = useState([]);
        
           <Route path="/delete" element ={<DeleteUser />} />
           <Route path="/register" element ={<RegisterPage />} />
+
+          <Route path="/resources" element={<Resources />} />
+        <Route path="/resources/update-resources-text/:cat_text_id" element={<UpdateResourcesText />} />
+        <Route path="/resources/news-and-insights" element={<Cards2 path_title="news-and-insights" title="News and Insights" />} />
+        <Route path="/resources/news-and-insights/:news_id/:news_title" element={<NewsDetails />} />
+        <Route path="/resources/news-and-insights/add-new-card" element={<AddCard path_title="news-and-insights" />} />
+        <Route path="/resources/news-and-insights/:id/:title/update-card" element={<UpdateCard path_title="news-and-insights" />} />
+        <Route path="/resources/relevant-news-stories" element={<Cards2 path_title="relevant-news-stories" title="Relevant News Stories" />} />
+        <Route path="/resources/relevant-news-stories/add-new-card" element={<AddCard path_title="relevant-news-stories" />} />
+        <Route path="/resources/relevant-news-stories/:id/:title/update-card" element={<UpdateCard path_title="relevant-news-stories" />} />
+        <Route path="/resources/industry-reports" element={<Cards2 path_title="industry-reports" title="Industry Reports" />} />
+        <Route path="/resources/industry-reports/add-new-card" element={<AddCard path_title="industry-reports" />} />
+        <Route path="/resources/industry-reports/:id/:title/update-card" element={<UpdateCard path_title="industry-reports" />} />
+        <Route path="/community-and-network" element={<CommunityNetwork />} />
+        <Route path="/community-and-network/update-community-and-network/:main_id" element={<UpdateCommunityNetwork />} />
+        
 
         <Route path="*" element={<p>Not Found</p>} />
       </Routes>

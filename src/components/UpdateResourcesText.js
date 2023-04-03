@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from './Navbar';
+import ParentPage from './ParentPage';
 import { useParams } from 'react-router-dom';
 import NotFound from './NotFound';
 import '../styles/UpdateResourcesText.css';
@@ -131,9 +131,10 @@ function UpdateResourcesText() {
     // else display the components and the text if the data have been fetched and updated successfully and the loading state is false
     else if (!loading && data) {
         return (
+            <ParentPage>
             <div>
                 <div>
-                    <Navbar />
+                
                     <div className="updateResourcesHero">
                         <img alt="UpdateResourcesHeroImg" src="http://unn-w20001556.newnumyspace.co.uk/IC3_Images/Hero_Images/updateResourcesTextHero.jpg" />
                     </div>
@@ -164,6 +165,7 @@ function UpdateResourcesText() {
                     )}
                 </div>
             </div>
+            </ParentPage>
         );
     }
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from './Navbar';
+
 import { useParams } from 'react-router-dom';
 import NotFound from './NotFound';
 import '../styles/UpdateCommunityNetwork.css';
@@ -133,7 +133,7 @@ function UpdateCommunityNetwork() {
         return (
             <div>
                 <div>
-                    <Navbar />
+                  
                     <div className="updateCommunityNetworkHero">
                         <img alt="UpdateCommunityNetworkHeroImg" src="http://unn-w20001556.newnumyspace.co.uk/IC3_Images/Hero_Images/updateResourcesTextHero.jpg" />
                     </div>

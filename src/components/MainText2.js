@@ -8,7 +8,7 @@ import '../styles/MainText.css';
  * 
  * @author Alexantros Tamboutsiaris W20001556
  */
-function MainText() {
+function MainText2() {
 
     // State variable for storing the text
     const [text, setText] = useState([]);
@@ -62,4 +62,4 @@ function MainText() {
     );
 }
 
-export default MainText;
+export default MainText2;

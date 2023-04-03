@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from './Navbar';
+import ParentPage from './ParentPage';
 import { useParams } from 'react-router-dom';
 import NotFound from './NotFound';
 import '../styles/UpdateCard.css';
@@ -363,10 +363,11 @@ function UpdateCard({ path_title }) {
     // else display the components and the card data if the data have been fetched and updated successfully and the loading state is false
     else if (!loading && data) {
         return (
+            <ParentPage>
             <div>
                 {path_title === "news-and-insights" &&
                     <div>
-                        <Navbar />
+                      
                         <div className="updateHero">
                             <img alt="UpdateCardHeroImg" src="http://unn-w20001556.newnumyspace.co.uk/IC3_Images/Hero_Images/updateCardHero.jpg" />
                         </div>
@@ -424,7 +425,7 @@ function UpdateCard({ path_title }) {
                 }
                 {path_title === "relevant-news-stories" &&
                     <div>
-                        <Navbar />
+                   
                         <div className="updateHero">
                             <img alt="UpdateCardHeroImg" src="http://unn-w20001556.newnumyspace.co.uk/IC3_Images/Hero_Images/updateCardHero.jpg" />
                         </div>
@@ -472,7 +473,7 @@ function UpdateCard({ path_title }) {
                 }
                 {path_title === "industry-reports" &&
                     <div>
-                        <Navbar />
+                        
                         <div className="updateHero">
                             <img alt="UpdateCardHeroImg" src="http://unn-w20001556.newnumyspace.co.uk/IC3_Images/Hero_Images/updateCardHero.jpg" />
                         </div>
@@ -514,6 +515,7 @@ function UpdateCard({ path_title }) {
                     </div>
                 }
             </div>
+            </ParentPage>
         );
     }
 
