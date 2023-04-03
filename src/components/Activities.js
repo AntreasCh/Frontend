@@ -124,7 +124,7 @@ return (
         </div>
         <div className="grid-item b5">
         <Link to="/contactus">
-        <button type="button" id="b5" className="big_btn">
+        <button type="button" id="b5" className = "small_btn">
         <img src={text.data[4]?.text}  className="App-logo" alt="logo"/>
   
         {props.text.data[8]?.text && (
