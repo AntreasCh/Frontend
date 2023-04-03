@@ -38,12 +38,12 @@
   
   h1{
     color:black;
-    
+    text-decoration: underline;
     font-style: italic;
-  
+    margin-top: 20px;
   }
   p{
     font-weight: bold;
- 
+    text-decoration: underline;
   }
  
