@@ -130,8 +130,8 @@ function AdminPage(props) {
       }
       { !linkClicked && !props.authenticated &&
       <div>
-       If you are not registered please:
-       <p><Link to="/register">clickhere</Link>
+         <div className="add-restriction">   If you are not registered please:</div>
+       <p><Link to="/register" className="add-link">click here</Link>
        </p>
       </div>
       }
