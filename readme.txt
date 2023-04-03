@@ -41,6 +41,8 @@ Github URLs:
 1. React: https://github.com/AntreasCh/Frontend
 2. API: https://github.com/tpanayiotis/backendic3
 
+Access emails after they are sent from the contact form:
+
 Email adress:
 =============
 kv6002group@gmail.com
