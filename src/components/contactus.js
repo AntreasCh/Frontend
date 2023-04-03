@@ -113,7 +113,7 @@ function ContactUs() {
       <div className="contactme" id="contact">
         <div className="contactOverlay">
           <div className="container">
-            <div className="form">
+            <div className="contactform">
               <form onSubmit={submitForm}>
               
                 <div className="formWord">
