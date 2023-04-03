@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import DeleteUser from './DeleteUser';
-import '../update.css';
+import './update.css';
 function UserForm({props, user, setSelectedUser, setUserList }) {
   const [account_id, setAccountID] = useState(user.account_id);
   const [username, setUsername] = useState(user.username);

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import {LinkContainer} from 'react-router-bootstrap'
-import Nav from 'react-bootstrap/Nav';
-import '../register.css';
+import ParentPage from './ParentPage';
+import { Link } from 'react-router-dom';
+import './register.css';
 function RegisterPage() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -35,6 +35,7 @@ function RegisterPage() {
   };
 
   return (
+    <ParentPage>
     <div className="registration">
        <h2 className="container__heading">Register</h2>
       <form onSubmit={handleSubmit} className="reg-form">
@@ -65,9 +66,10 @@ function RegisterPage() {
         <button type="submit"className="Reg-button">Register</button>
       </form>
      <div className="text">If you have an account please:</div>
-       <LinkContainer to="/admin">
-        <Nav.Link className="help-link"> click here</Nav.Link></LinkContainer>
+       <Link to="/admin">
+       click here</Link>
     </div>
+    </ParentPage>
   );
 }
 

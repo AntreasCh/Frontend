@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AddUser from './AddUser';
 import UpdateUser from './UpdateUser';
 import UpdatePassword from './UpdatePassword';
-import '../dashboard.css';
+import './dashboard.css';
 function Dashboard(props) {
 
   const [users, setUsers] = useState([]);

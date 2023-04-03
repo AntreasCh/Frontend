@@ -11,14 +11,16 @@ const Navbar = () => {
     <div className="Navbar">
       <span className="nav-logo">International Centre for Connected Construction (IC3)</span>
       <div className={`nav-items ${isOpen && "open"}`}>
-        <a href="/">Home</a>
+       
         <a href="/tppfront/activities">Activities</a>
         <a href="/tppfront/resources">Resources</a>
         <a href="/tppfront/community">Community</a>
         <a href="/tppfront/events">Events</a>
         
         <a href="/tppfront/about">About</a>
-        <a href="/contactus">Contact</a>
+        <a href="/tppfront/contactus">Contact</a>
+        <a href="/tppfront/admin">Log in</a>
+        <a href="/tppfront/register">Register</a>
       </div>
       <div
         className={`nav-toggle ${isOpen && "open"}`}

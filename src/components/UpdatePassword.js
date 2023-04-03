@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../update.css';
+import './update.css';
 function UpdatePassword({props, user, setSelectedUser, setUserList }) {
   const [password, setPassword] = useState(user.password);  
   const [account_id, setAccountID] = useState(user.account_id);
@@ -55,6 +55,7 @@ data.append('encryptedPassword', encryptedPassword);
   };
 
   return (
+    
     <div className="updateform">
       <form onSubmit={handleSubmit} >
       <p> Update password</p>

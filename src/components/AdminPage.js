@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import {Buffer} from 'buffer';
 import Dashboard from './Dashboard';
-import {LinkContainer} from 'react-router-bootstrap'
-import Nav from 'react-bootstrap/Nav';
-import '../admin.css';
+import { Link } from 'react-router-dom';
+import ParentPage from './ParentPage';
+import './admin.css';
 import { useNavigate } from "react-router-dom";
 
 
@@ -56,7 +56,7 @@ function AdminPage(props) {
             props.handleAuthenticated(true);
             localStorage.setItem('token', json.data.token);
             localStorage.setItem('username', username);
-            localStorage.setItem('password', password);
+          
             localStorage.setItem('status',json.data.status);
             localStorage.setItem('user_type',json.data.user_type);
             alert("success log in");
@@ -96,7 +96,9 @@ function AdminPage(props) {
   }
 
   return (
+    <ParentPage>
 <div className="container">
+  
     {props.authenticated && 
       <div>
         <h2>Administrator Dashboard</h2>
@@ -129,13 +131,13 @@ function AdminPage(props) {
       { !linkClicked && !props.authenticated &&
       <div>
        If you are not registered please:
-       <p><LinkContainer to="/register"><Nav.Link onClick={handleClick}> click here</Nav.Link></LinkContainer>
+       <p><Link to="/register">clickhere</Link>
        </p>
       </div>
       }
      
     </div>
-
+    </ParentPage>
   )
 }
 export default AdminPage;

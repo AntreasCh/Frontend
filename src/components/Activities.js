@@ -24,7 +24,7 @@ const HomePage = (props) => {
   
 return (
   <ParentPage>
-{!props.loading &&  props.text &&  !isLoading && (
+{!props.loading  &&  !isLoading && (
           <div className="Dataa">
               <h2>
               {props.text.data[0]?.text && (
@@ -109,7 +109,7 @@ return (
             
         
         )}
-        {props.loading && (
+        {props.loading && isLoading && (
           <div className="Data">
           <h2> IC3 Activities</h2>
           <div className="loading">Loading...</div>
