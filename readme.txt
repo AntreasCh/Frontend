@@ -26,7 +26,6 @@ Pre-install libraries in terminal:
 - npm install moment
 - npm install axios
 - npm install react spring
-- npm install 
 - npm i swiper
 - npm i @emotion/styled
 - npm i @emotion/css
