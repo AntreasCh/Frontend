@@ -12,12 +12,12 @@ const Navbar = () => {
       <span className="nav-logo">International Centre for Connected Construction (IC3)</span>
       <div className={`nav-items ${isOpen && "open"}`}>
         <a href="/">Home</a>
-        <a href="/activities">Activities</a>
-        <a href="#resources">Resources</a>
-        <a href="#community">Community</a>
-        <a href="/events">Events</a>
-        <a href="/education">Education</a>
-        <a href="#about">About</a>
+        <a href="/tppfront/activities">Activities</a>
+        <a href="/tppfront/resources">Resources</a>
+        <a href="/tppfront/community">Community</a>
+        <a href="/tppfront/events">Events</a>
+        
+        <a href="/tppfront/about">About</a>
         <a href="/contactus">Contact</a>
       </div>
       <div

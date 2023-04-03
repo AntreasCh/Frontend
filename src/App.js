@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import Activities from './components/Activities';
 import Events from './components/events';
-import HomePage from './components/HomePage';
+
 import AdminEvents from './components/adminevents';
 import { useLocation } from 'react-router-dom';
 import ContactUs from './components/contactus';
@@ -20,7 +20,10 @@ import AdminActivities from './components/AdminActivities';
 import Innovation from './components/Innovation';
 import AdminInnovation from './components/AdminInnovation';
 import UpdateInnovationProjects from './components/UpdateInnovationProjects';
-
+import Submissions from './components/submissions';
+import About from './components/about';
+import People from './components/people';
+import AdminAbout from './components/adminabout';
 
 function App() {
   const [text, setText] = useState([]);
@@ -31,6 +34,9 @@ const [demonstrators_text, setDemonstrators] = useState([]);
 const [isLoadingDemonstrators, setIsLoadingDemonstrators] = useState(true);
 const [innovation_text, setInnovation] = useState([]);
 const [isLoadingInnovation, setIsLoadingInnovation] = useState(true);
+const [submissions, setSubmissions] = useState([]);
+const [about, setAbout] = useState([]);
+
 
 useEffect(() => {
   setIsLoading(true);
@@ -76,20 +82,49 @@ useEffect(() => {
     .catch((error) => console.error(error));
 }, []);
 
-
+useEffect( () => {
+    
+  fetch("http://unn-w20017219.newnumyspace.co.uk/ic3/submissions")
+  .then(
+      (response) => response.json()
+  )
+  .then(
+      (json) => {
+          setSubmissions(json.data)
+          setIsLoading(false)
+      }
+  )
+  .catch(
+      (e) => {
+          console.log(e.message)
+      }
+  )
+},[]);
+useEffect(() => {
+fetch("http://unn-w20017219.newnumyspace.co.uk/ic3/about")
+  .then((response) => response.json())
+  .then((json) => {
+    console.log(json);
+    setAbout(json.data);
+    setIsLoading(false);
+  })
+  .catch((e) => {
+    console.log(e.message);
+  });
+}, []);
 
   return (
     <div className="App">
     
       <Routes>
-        <Route path="/" element={<HomePage  />} />
+        
         <Route path="/adminevents" element={<AdminEvents />}/>
         <Route path="/admineducation" element={<AdminEducation />}/>
         <Route path="/activities" element={<Activities text={text} loading={isLoading}/>}/>
         <Route path="/adminactivities" element={<AdminActivities  text={text} loading={isLoading}/>}/>
         <Route path="/events" element={<Events />}/>
         <Route path="/education" element={<Education />}/>
-        <Route path="/contactus" element={<ContactUs />}/>
+       
         <Route path="/showproject/:ids" element={<ShowProject  />} />
         <Route path="/updateproject/:ids" element={<UpdateProject  />} />
         <Route path="/updatedemonstratorsproject/:ids" element={<UpdateDemonstratorsProject  />} />
@@ -100,6 +135,14 @@ useEffect(() => {
         <Route path="/updateinnovationproject/:ids" element={<UpdateInnovationProjects  />} />
         <Route path="/innovation" element={<Innovation  text={innovation_text} loading={isLoadingInnovation}/>}/>
         <Route path="/admininnovation" element={<AdminInnovation   text={innovation_text} loading={isLoadingInnovation}/>}/>
+
+
+        <Route path="/contactus" element={<ContactUs />}/>
+        <Route path="/people" element={<People />}/>
+
+        <Route path="/submissions" element={<Submissions submissions={submissions} loading={isLoading}/>}/>
+        <Route path="/about" element={<About about={about} loading={isLoading} />}/>
+        <Route path="/adminabout" element={<AdminAbout about={about} loading={isLoading} />}/>
 
         <Route path="*" element={<p>Not Found</p>} />
       </Routes>

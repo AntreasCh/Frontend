@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { HeaderWrapper, H3 } from './style';
 import ParentPage from './ParentPage';
-import AdminSlider1 from '../adminslider';
+import AdminSlider1 from './adminslider';
 import AdminSlider2 from './adminslider2';
 
 function AdminAbout(props) {

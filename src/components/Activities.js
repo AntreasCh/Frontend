@@ -83,10 +83,12 @@ return (
           </Link>
         </div>
         <div className="grid-item">
+          <Link to="/education">
           <button type = "button" id = "b4" className = "small_btn"><img src={text.data[3].text}  className="App-logo" alt="logo"/>
           {props.text.data[7]?.text && (
       <p>{props.text.data[7].text}</p>)}
             </button>
+            </Link>
         </div>
         <div className="grid-item b5">
         <Link to="/contactus">
