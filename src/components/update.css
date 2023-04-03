@@ -5,7 +5,7 @@
   align-items: center;
   margin: 0 auto;
   padding: 20px;
-  width: 95%;
+  width: 120%;
   background-color: #f2f2f2;
 }
 
@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   margin: 20px 0;
-  width: 100%;
+  width: 120%;
   font-weight: bold;
 }
 
@@ -49,4 +49,14 @@
   border: 1px solid black;
   font-size: 16px;
   padding: 10px 20px;
+}
+.help-link {
+  margin-top: 0px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: darkcyan;
+}
+.add-restriction{
+   font-weight: bold;
+   color:black;
 }
