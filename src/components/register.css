@@ -26,18 +26,18 @@
     width: 90%;
     font-size: 18px;
   }
-  
-  .reg-input {
+
+  .registration-input {
     padding: 10px;
     font-size: 16px;
     border: 1px solid gray;
     border-radius: 4px;
     align-items: center;
-    width: 80%;
+    width: 100%;
   }
   
   .Reg-button[type="submit"] {
-    padding: 10px 80px;
+    padding: 10px 60px;
     background-color: darkcyan;
     color: white;
     border: none;
