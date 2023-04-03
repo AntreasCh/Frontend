@@ -9,6 +9,7 @@ function AdminAbout(props) {
   const [showForm, setShowForm] = useState(false);
   const [description, setDescription] = useState('');
   const [id, setId] = useState('');
+  const [showForm1, setShowForm1] = useState(false);
 
   const handleLearnMoreClick = () => {
     aboutRef.current.scrollIntoView({ behavior: "smooth" });
@@ -80,6 +81,10 @@ function AdminAbout(props) {
     setShowForm(false);
     setDescription('');
   };
+  const handleCancelClick1 = () => {
+    setShowForm1(false);
+    setDescription('');
+  };
 
   return (
     <ParentPage>
@@ -108,13 +113,21 @@ function AdminAbout(props) {
     </div>
   ))
 }
-<button onClick={() => { setShowForm(true); handleAddText(); }}>Add Text</button>
+<button onClick={() => { setShowForm1(true);  }}>Add Text</button>
+              {showForm1 && (
+            <form className='formtext' >
+              <textarea value={description} onChange={(e) => setDescription(e.target.value)} />
+              <button type="button" onClick={handleAddText}>Add Text</button>
 
+              <button type="button" onClick={handleCancelClick1}>Cancel</button>
+            </form>
+          )}
 
           {showForm && (
             <form className='formtext' onSubmit={handleSubmit}>
               <textarea value={description} onChange={(e) => setDescription(e.target.value)} />
               <button type="submit">Save</button>
+
               <button type="button" onClick={handleCancelClick}>Cancel</button>
             </form>
           )}
