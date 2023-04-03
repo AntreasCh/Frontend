@@ -1573,6 +1573,314 @@ label {
   opacity: 0.5;
   cursor: not-allowed;
 }
+.contactme {
+  width: 100%;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.contactOverlay {
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-image: url('http://unn-w20017219.newnumyspace.co.uk/images/ic3.png');
+}
 
+.contactform {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.contactform form {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  overflow: hidden;
+  border-radius: 20px;
+  opacity: 94%;
+}
+.sub{
+  width: 190px;
+  height: 55px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #001517;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
+  color: white;
+  font-weight: bold;
+  margin-top: 0%;
+  text-align: center;
+  cursor: pointer;
+
+}
+.sub:hover{
+  background-color: unset;
+  border: 2px solid #e49504;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
+  color: black;
+}
+.contactform form button {
+  width: 190px;
+  height: 55px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #001517;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
+  color: white;
+  font-weight: bold;
+  margin-top: 0%;
+  cursor: pointer;
+
+}
+.contactform form button:hover {
+  background-color: unset;
+  border: 2px solid #e49504;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
+  color: black;
+}
+.formWord {
+  width: 40%;
+  padding: 4%;
+}
+.formWord h2 {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 10%;
+}
+.formWord .input100 {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10%;
+  border: 0;
+  margin-top: 2%;
+  padding-left: 3%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+}
+
+
+
+.sl{
+  width: 30vh;
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 20px;
+  
+  -webkit-box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+}
+.contactform .pref {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contactform .pref div {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contactform .pref input[type="checkbox"] {
+  margin-right: 5px;
+}
+.contactform select {
+  width: 103.5%;
+  padding: 16px 20px;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  border: none;
+  border-radius: 4px;
+  color: black;
+  -webkit-box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  padding-left: 3%;
+
+}
+.formWord textarea {
+  width: 100%;
+  margin-bottom: 10%;
+  border: none;
+  margin-top: 2%;
+  height: 150px;
+  color: black;
+  -webkit-box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  padding-left: 3%;
+  resize: none;
+}
+.formtext textarea {
+  width: 100%;
+  margin-bottom: 10%;
+  border: none;
+  margin-top: 2%;
+  height: 150px;
+  color: black;
+  -webkit-box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  padding-left: 3%;
+  resize: none;
+}
+
+.page-button.current-page {
+  background-color: rgba(187, 186, 186, 0.71);
+}
+ 
+.checkbox-group {
+  margin: 1rem 0;
+  -webkit-box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  border-radius: 12px;
+  width: 50vh;
+  padding: 5%;
+}
+
+.checkbox-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 1000;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+  cursor: pointer;
+  
+}
+
+.checkbox-group input[type="checkbox"]:checked + span {
+  font-weight: 1000;
+}
+
+.checkbox-group span {
+  cursor: pointer;
+}
+.atb button{
+  background-color: black;
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 20px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 200px;
+
+}
+.atb button:hover{
+  background-color: #848686;
+  color: black;
+}
+.aboutus{
+  padding: 30px;
+  display: relative;
+margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+}
+.people{
+  padding: 3rem 0;
+  text-align: center;
+  background-color: whitesmoke;
+}
+.people p{
+  font-size: 1.5rem;
+  color: gray;
+}
+.people h2{
+  font-size: 2.3rem;
+}
+.partners{
+  padding: 3rem 0;
+  text-align: center;
+  background-color: rgb(174, 174, 174);
+}
+.partners p{
+  font-size: 1.2rem;
+  color: black;
+}
+.partners h2{
+  font-size: 1.5rem;
+}
+.search {
+  width: 30vh;
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 20px;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  font-size: larger;
+}
+.slide1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Add this line */
+  margin: 20px;
+  font-size: 16px;
+}
+
+.slide1 input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.slide1 button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+
+.border{
+  width: 200vh;
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 20px;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+  box-shadow: 0px 0px 48px 0px rgb(218, 218, 218);
+}
 
 
